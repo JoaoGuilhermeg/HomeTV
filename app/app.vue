@@ -4,7 +4,7 @@ useHead({
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
   ],
   link: [
-    { rel: 'icon', href: '/hometv.png' }
+    { rel: 'icon', href: '/iconehometv.png' }
   ],
   htmlAttrs: {
     lang: 'pt-br'
@@ -19,31 +19,19 @@ useSeoMeta({
   description,
   ogTitle: title,
   ogDescription: description,
-  img:'hometv.png' ,
+  img:'iconehometv.png',
   twitterCard: 'summary_large_image'
 })
 </script>
 
 <template>
-  <UApp>
-    <UHeader>
-      <template #left>
-        <img
-        src="/hometv.png"
-        alt="ìcone HomeTV"
-        class="h-10 w-auto rounded-lg shadow-2xl rinr ring-default"
-        >
-        <TemplateMenu />
-      </template>
-
-     
-    </UHeader>
-
+    <TemplateMenu />
+    <uApp>
     <UMain>
       <NuxtPage />
     </UMain>
 
-    <USeparator icon="i-simple-icons-nuxtdotjs" />
+    <USeparator icon="iconehometv.png" />
 
     <UFooter>
       <template #left>
